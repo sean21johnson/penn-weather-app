@@ -1,0 +1,102 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.geoButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ffa34e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.geoButton:hover {
+  background-color: #e6953c;
+}
+
+.geoButton:active {
+  background-color: #cc7a2e;
+}
+
+.geoButton:focus {
+  outline: 3px solid #ffcc33;
+}
+
+.input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input:focus {
+  outline: 2px solid #007acc;
+}
+
+.weatherButton {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ffa34e;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.weatherButton:hover {
+  background-color: #e6953c;
+}
+
+.weatherButton:active {
+  background-color: #cc7a2e;
+}
+
+.weatherButton:focus {
+  outline: 3px solid #ffcc33;
+}
+
+.weatherButton:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+  background-color: #e6953c;
+}
+
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+}

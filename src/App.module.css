@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/public/images/dark-clouds.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Work Sans", sans-serif;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 15px;
+  }
+
+  body {
+    background-position: top center;
+  }
+}

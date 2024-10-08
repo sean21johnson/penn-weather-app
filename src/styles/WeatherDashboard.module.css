@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.error {
+  color: red;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .main {
+    gap: 30px; /* Reduce gap on smaller screens */
+    padding: 20px; /* Add some padding for mobile */
+  }
+
+  .content {
+    width: 100%; /* Ensure content takes full width on mobile */
+    padding: 15px; /* Add padding to prevent edges from touching the screen */
+  }
+
+  .error {
+    font-size: 14px; /* Adjust error message font size for mobile */
+    padding: 10px; /* Add some padding around the error message */
+  }
+}
