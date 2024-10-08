@@ -2,40 +2,38 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import WeatherDashboard from "../../components/WeatherDashboard";
 import useWeatherData from "../../hooks/useWeatherData";
 
-// Mock the useWeatherData hook
 jest.mock("../../hooks/useWeatherData");
 
-describe("WeatherDashboard Component", () => {
-  // Updated mockUseWeatherData with proper typing for weatherData
-  const mockUseWeatherData: {
-    city: string;
-    setCity: jest.Mock<any, any>;
-    weatherData: null | {
-      airQuality: number;
-      weather: { description: string }[];
-      main: {
-        temp_max: number;
-        temp_min: number;
-        temp: number;
-        feels_like: number;
-        humidity: number;
-        pressure: number;
-      };
-      visibility: number;
-      wind: { speed: number };
+const mockUseWeatherData: {
+  city: string;
+  setCity: jest.Mock<any, any>;
+  weatherData: null | {
+    airQuality: number;
+    weather: { description: string }[];
+    main: {
+      temp_max: number;
+      temp_min: number;
+      temp: number;
+      feels_like: number;
+      humidity: number;
+      pressure: number;
     };
-    error: string;
-    handleSubmitForm: jest.Mock<any, any>;
-    handleClickGeolocation: jest.Mock<any, any>;
-  } = {
-    city: "New York",
-    setCity: jest.fn(),
-    weatherData: null, // Start with null but allow it to be assigned a valid object later
-    error: "",
-    handleSubmitForm: jest.fn(),
-    handleClickGeolocation: jest.fn(),
+    visibility: number;
+    wind: { speed: number };
   };
+  error: string;
+  handleSubmitForm: jest.Mock<any, any>;
+  handleClickGeolocation: jest.Mock<any, any>;
+} = {
+  city: "New York",
+  setCity: jest.fn(),
+  weatherData: null, // Start with null but allow it to be assigned a valid object later
+  error: "",
+  handleSubmitForm: jest.fn(),
+  handleClickGeolocation: jest.fn(),
+};
 
+describe("WeatherDashboard Component", () => {
   beforeEach(() => {
     jest.clearAllMocks();
     (useWeatherData as jest.Mock).mockReturnValue(mockUseWeatherData);
