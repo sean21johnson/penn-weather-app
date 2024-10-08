@@ -19,12 +19,11 @@ Before running the app, make sure you have the following installed:
 
 1. **Clone the repository:**
 
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
+- git clone https://github.com/your-username/weather-app.git.
 
 2. **Install Dependencies:**
 
-Run "npm install". (yarn can be used too)
+- Run "npm install". Ensure you are in the correct directory that you added in step 1. Also, "yarn" can be used as a packaged manager instead of npm if you choose.
 
 3. **Create a .env file in the root of the project and add your OpenWeatherMap API key**
 
@@ -32,11 +31,11 @@ Run "npm install". (yarn can be used too)
 
 4. **Run the app**
 
-Run "npm start"
+- Run "npm start"
 
 5. **Running tests**
 
-Run "npm test"
+- Run "npm test"
 
 ## Dependencies
 
