@@ -19,16 +19,12 @@ Before running the app, make sure you have the following installed:
 
 1. **Clone the repository:**
 
-- git clone https://github.com/your-username/weather-app.git
-- cd weather-app
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
 
 2. **Install Dependencies:**
 
-npm install
-
-# or
-
-yarn install
+Run "npm install". (yarn can be used too)
 
 3. **Create a .env file in the root of the project and add your OpenWeatherMap API key**
 
@@ -36,42 +32,11 @@ yarn install
 
 4. **Run the app**
 
-npm start
-
-# or
-
-yarn start
+Run "npm start"
 
 5. **Running tests**
 
-npm test
-
-# or
-
-yarn test
-
-## Project Structure
-
-├── src
-│ ├── components
-│ │ ├── CitySearch.tsx # Search component for entering city or using geolocation
-│ │ ├── WeatherDashboard.tsx # Main dashboard to display weather information
-│ │ ├── WeatherDetails.tsx # Component to display detailed weather info (humidity, pressure, etc.)
-│ │ ├── WeatherDetail.tsx # Individual weather detail item (label-value pair)
-│ │ ├── WeatherSummary.tsx # Component to display a summarized view of the weather
-│ ├── hooks
-│ │ └── useWeatherData.tsx # Custom hook for managing weather data fetching and state
-│ ├── styles
-│ │ ├── CitySearch.module.css # Styles for CitySearch component
-│ │ ├── WeatherDashboard.module.css # Styles for WeatherDashboard component
-│ │ ├── WeatherDetails.module.css # Styles for WeatherDetails component
-│ │ ├── WeatherSummary.module.css # Styles for WeatherSummary component
-│ │ ├── WeatherDetail.module.css # Styles for WeatherDetail component
-│ ├── App.tsx # Main entry point for the app's component tree
-│ └── index.tsx # Entry point for rendering the React application
-├── .env # Environment variables file
-├── package.json # Project metadata and dependencies
-└── tsconfig.json # TypeScript configuration
+Run "npm test"
 
 ## Dependencies
 
